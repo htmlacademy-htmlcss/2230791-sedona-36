@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
     <base href="https://htmlacademy-htmlcss.github.io/2230791-sedona-36/3/">
 </head>
   <body>
   <header class="page-header">
     <a class="navigation-logo" href="index.html">
-      <img class="page-header-logo" src="images/main-page/logo.jpg" width="138" height="64"alt="Логотип: city of Sedona">
+      <img class="page-header-logo" src="images/catalog/logo-header.svg" width="138" height="64" alt="Логотип: city of Sedona">
     </a>
     <nav class="navigation">
       <ul class="navigation-list">
@@ -22,33 +23,27 @@
          <a class="navigation-link" href="hotels.html">Гостиницы</a>
         </li>
       </ul>
-      <ul class="navigation-item navigation-user">
-        <li class="navigation-item">
-         <a class="navigation-link" href="#">
+      <ul class="navigation-user">
+        <li class="navigation-user-item">
+         <a class="navigation-user-link navigation-user-link-search" href="#">
          <span class="visually-hidden">Поиск</span>
          </a>
         </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">
+        <li class="navigation-user-item">
+          <a class="navigation-user-link navigation-user-link-favorite" href="#">
           <span class="visually-hidden">Избранное</span>
+          <span class="notification-badge">12</span>
           </a>
-        </li>
-        <li>
-         <a class="navigation-link" href="#">Хочу сюда</a>
         </li>
       </ul>
     </nav>
-  </header>
+    <a class="navigation-link" href="#">Хочу сюда</a>
+    </header>
 
   <main class="main-index">
-    <h1 class="visually-hidden">
-     Седона
-    </h1>
     <section class="Hero">
-     <h2 class="visually-hidden">
-      Приветствие
-     </h2>
-     <img class="Hero" src="images/main-page/index-background.jpg" width="1200" height="485" alt="Welcome">
+    <h1 class="visually-hidden">Седона-городок в Аризоне</h1>
+     <img class="Hero-img" src="images/main-page/welcome.svg" width="458" height="352" alt="Welcome">
     </section>
 
     <section class="advantages">
@@ -113,7 +108,6 @@
   <footer class="page-footer">
 
    <section class="newsletter">
-    <img class="newsletter" src="images/main-page/Subscribe.jpg" width="1200" height="414.86" alt="Фон на подписке">
       <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
        <p class="newsletter-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
        <p class="newsletter-form-email">
@@ -155,7 +149,10 @@
 
     <section class="footer-site">
       <h2 class="visually-hidden">Наш сайт</h2>
-        <a class="contact-site" href="https://htmlacademy.ru/">https://htmlacademy.ru/</a>
+        <a class="contact-site" href="https://htmlacademy.ru/">https://htmlacademy.ru/
+          <img class="contact-site" src="images/icons/HTML-Academy.svg" width="115" height="33" alt="Логотип: HTML-Academy">
+
+        </a>
     </section>
   </footer>
  </body>

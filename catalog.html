@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+
   <header class="page-header">
     <a class="navigation-logo" href="index.html">
       <img class="page-header-logo" src="images/catalog/logo-header.svg" width="138" height="64" alt="Логотип: city of Sedona">
@@ -37,6 +39,8 @@
     </nav>
     <a class="navigation-link" href="#">Хочу сюда</a>
     </header>
+
+
 
   <main class="main-inner">
     <header class="inner-header">
@@ -76,9 +80,6 @@
                     </label>
                 </li>
             </ul>
-        </fieldset>
-
-        <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Тип жилья:</legend>
             <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -106,24 +107,23 @@
       </form>
     </section>
 
+
     <section class="select-control">
       <h3 class="select-control">НАЙДЕНО ГОСТИННИЦ: 38</h3>
+      <div class="sorting-container">
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
           <option value="popular">Сначала популярные</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
-
       <a class="button button-black" href="#">
         <span class="visually-hidden">Показать карточки</span>
-      </a>
-      <a class="button" href="#">
-        <span class="visually-hidden">Показать одно что-то</span>
-      </a>
-      <a class="button" href="#">
+        <span class="visually-hidden">Показать что-то одно</span>
         <span class="visually-hidden">Показать список</span>
       </a>
+    </div>
     </section>
+
 
     <section class="catalog">
       <ul class="catalog-list">
@@ -176,8 +176,11 @@
               <p class="catalog-card-text">Гостинница</p>
               <p class="catalog-card-text">От 1500 р</p>
             </a>
+
               <a class="button" href="#">Подробнее</a>
+
               <a class="button" href="#">В избранное</a>
+
               <div>
                 <p><span class="visually-hidden">2 звезды</span></p>
                 <p>Рейтинг: 5.0</p>
@@ -208,45 +211,47 @@
     </section>
   </main>
 
-<footer class="page-footer">
+
+
+  <footer class="page-footer">
     <section class="newsletter">
       <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <p class="newsletter-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <p class="newsletter-form-email">
-            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label for="newsletter-email"></label>
-              <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
-              <button class="button newsletter-button" type="submit">Подписаться</button>
-            </form>
-        </p>
+       <p class="newsletter-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+       <p class="newsletter-form-email">
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+         <label for="newsletter-email"></label>
+         <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+         <button class="button-newsletter-button" type="submit">Подписаться</button>
+        </form>
+       </p>
     </section>
 
     <section class="footer-social">
       <h2 class="visually-hidden">Наши соцсети</h2>
-        <ul class="footer-social-list">
-            <li class="footer-social-item">
-               <a class="button" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">ВКонтакте</span>
-               </a>
-            </li>
-            <li class="footer-social-item">
-               <a class="button" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Телеграмм</span>
-               </a>
-            </li>
-            <li class="footer-social-item">
-               <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">ЮТюб</span>
-               </a>
-            </li>
-        </ul>
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="button-vk" href="https://vk.com/htmlacademy">
+           <span class="visually-hidden">ВКонтакте</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button-tg" href="https://t.me/htmlacademy">
+           <span class="visually-hidden">Телеграмм</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button-ut" href="https://www.youtube.com/user/htmlacademyru">
+           <span class="visually-hidden">ЮТюб</span>
+          </a>
+        </li>
+      </ul>
     </section>
 
     <section class="footer-contacts">
-      <h2 class="visually-hidden">Наш телефон</h2>
-         <address class="contact-phone">
-           <a class="contact-phone" href="tel:88128121212">8-812-812-12-12</a>
-         </address>
+     <h2 class="visually-hidden">Наш телефон</h2>
+      <address class="contact-phone">
+        <a class="contact-phone" href="tel:88128121212">8-812-812-12-12</a>
+      </address>
     </section>
 
     <section class="footer-site">
@@ -255,6 +260,6 @@
           <img class="contact-site" src="images/icons/HTML-Academy.svg" width="115" height="33" alt="Логотип: HTML-Academy">
         </a>
     </section>
-</footer>
-</body>
+  </footer>
+ </body>
 </html>

@@ -43,6 +43,8 @@
 
 
   <main class="main-inner" data-test="main">
+
+  <div class="catalog-fills">
     <header class="inner-header">
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
@@ -54,7 +56,6 @@
         </li>
       </ul>
     </header>
-
     <section class="catalog-hostels" data-test="filter">
       <h2 class="visually-hidden">Фильтр по гостинницам</h2>
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -102,11 +103,11 @@
                 </li>
             </ul>
         </fieldset>
-        <button class="button" type="submit">Применить</button>
-        <button class="button" type="submit">Сбросить</button>
+        <button class="button button-choose" type="submit">Применить</button>
+        <button class="button button-transparent" type="submit">Сбросить</button>
       </form>
     </section>
-
+  </div>
 
     <section class="select-control">
       <h3 class="select-control">НАЙДЕНО ГОСТИННИЦ: 38</h3>
@@ -134,9 +135,9 @@
             <p class="catalog-card-text">Гостинница</p>
             <p class="catalog-card-text">От 4000 р</p>
           </a>
-          <a class="button" href="#">Подробнее</a>
-          <a class="button" href="#">В избранное</a>
-          <div>
+          <a class="button button-brown" href="#">Подробнее</a>
+          <a class="button button-blue" href="#">В избранное</a>
+         <div>
             <p><span class="visually-hidden">4 звезды</span></p>
             <p>Рейтинг: 8.5</p>
           </div>
@@ -148,8 +149,8 @@
               <p class="catalog-card-text">Гостинница</p>
               <p class="catalog-card-text">От 5000 р</p>
             </a>
-              <a class="button" href="#">Подробнее</a>
-              <a class="button" href="#">В избранное</a>
+              <a class="button button-brown" href="#">Подробнее</a>
+              <a class="button button-green" href="#">В избранное</a>
               <div>
                 <p><span class="visually-hidden">4 звезды</span></p>
                 <p>Рейтинг: 9.2</p>
@@ -162,8 +163,8 @@
               <p class="catalog-card-text">Гостинница</p>
               <p class="catalog-card-text">От 2500 р</p>
             </a>
-            <a class="button" href="#">Подробнее</a>
-            <a class="button" href="#">В избранное</a>
+            <a class="button button-brown" href="#">Подробнее</a>
+            <a class="button button-blue" href="#">В избранное</a>
               <div>
                 <p><span class="visually-hidden">3 звезды</span></p>
                 <p>Рейтинг: 6.9</p>
@@ -177,9 +178,9 @@
               <p class="catalog-card-text">От 1500 р</p>
             </a>
 
-              <a class="button" href="#">Подробнее</a>
+              <a class="button button-brown" href="#">Подробнее</a>
 
-              <a class="button" href="#">В избранное</a>
+              <a class="button button-blue" href="#">В избранное</a>
 
               <div>
                 <p><span class="visually-hidden">2 звезды</span></p>
@@ -210,8 +211,6 @@
       </ul>
     </section>
   </main>
-
-
 
   <footer class="page-footer" data-test="subscribe">
     <section class="newsletter">
@@ -256,7 +255,7 @@
 
     <section class="footer-site">
       <h2 class="visually-hidden">Наш сайт</h2>
-        <a class="contact-site" href="https://htmlacademy.ru/">https://htmlacademy.ru/
+        <a class="contact-site" href="https://htmlacademy.ru/">
           <img class="contact-site" src="images/icons/HTML-Academy.svg" width="115" height="33" alt="Логотип: HTML-Academy">
         </a>
     </section>

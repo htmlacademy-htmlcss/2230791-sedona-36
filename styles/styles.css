@@ -14,24 +14,8 @@
   font-display: swap;
 }
 
-@font-face {
-    font-family: "PT Sans";
-    font-style: italic;
-    font-weight: 400;
-    src: url(../fonts/ptsans-400.woff2) format("woff2");
-    font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 700;
-  src: url(../fonts/ptsans-700.woff2) format("woff2");
-  font-display: swap;
-}
-
 body {
-    font-family: "PT Sans"; sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 24px;
     color: #000000;
@@ -44,7 +28,7 @@ body {
 }
 
 .navigation-link {
-    font-family: "PT Sans"; sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -61,16 +45,18 @@ body {
     color: inherit;
     background-color: #FFFFFF;
     text-decoration: none;
-    /* text-transform: capitalize;
-    text-align: center; - не указываю здесь,
-    потому что наследует из .navigation-link, верно?*/
+    text-transform: capitalize;
+    text-align: center;
 }
 
 .main-index {
-    background-image: url("../images/main-page/index-background.jpg");
-    /* color: inherit; - какой вариант лучше:
-    этот или ниже который написала?*/
     color: #000000;
+    background-color: #FFFFFF;
+
+}
+
+.hero {
+    background-image: url("../images/main-page/index-background.jpg");
     background-color: #FFFFFF;
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -81,16 +67,11 @@ body {
 }
 
 .advantages-title {
-    /* text-align: center; - можно не указывать повторно, так как выше в родителе .advantages это уже указано?*/
     font-family: 'PT Sans'; sans-serif;
-    /* font-style: normal; - можно не указывать, потому что указан в родителе? */
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
-    /* color: inherit; - убрать? потому что это указано выше? Или прописать
-    color: #000000;
-    background-color: #FFFFFF;*/
 }
 
 .advantages-text {
@@ -154,9 +135,6 @@ body {
 }
 
 .conveniences-title {
-    /* font-family: 'PT Sans'; sans-serif;
-    font-style: normal; - могу это не писать,
-    потому как в боди это уже указано? */
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -201,7 +179,6 @@ body {
 .button-search {
     color: #FFFFFF;
     background-color: #756157;
-    background-image: url(/images/main-page/Кнопка.svg);
     width: 376px;
     height: 52px;
     padding: 8px 50px;
@@ -299,9 +276,11 @@ body {
 /* Catalog */
 
 
-.main-inner {
-    /* color: #FFFFFF; */
+.catalog-fills {
+    color: #FFFFFF;
+    background-color: #82B3D3;
     background-image: url("../images/catalog/catalog-background-1.jpg");
+
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
@@ -326,18 +305,70 @@ body {
     background-color: #ffffff;
 }
 
-
-.button-black {
-    color: #000000;
-    background-color: #ffffff;
+.button {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 4px;
 }
 
+.button-black {
+color: #000000;
+background-color: #FFFFFF;
+}
 
+.button-choose {
+    font-family: "PT Sans", sans-serif;
+    color: #FFFFFF;
+    background-color: #82B3D3;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 8px 50px;
+}
 
+.button-transparent {
+    font-family: "PT Sans", sans-serif;
+    color: #FFFFFF;
+    background: rgba(0, 0, 0, 0);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 8px 50px;
+}
 
+.button-brown {
+    color: #FFFFFF;
+    background-color: #756157;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 140px;
+    height: 36px;
+    padding: 8px 26px;
+}
 
+.button-blue {
+    color: #FFFFFF;
+    background-color: #83B3D3;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 8px 26px;
+}
 
-
+.button-green {
+    color: #FFFFFF;
+    background-color: #7DB54F;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 8px 26px;
+}
 
 .catalog-list {
     background-color: #FFFFFF;

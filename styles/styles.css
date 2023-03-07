@@ -205,7 +205,8 @@ body {
 
 .newsletter {
     text-align: center;
-    background-image: url("/images/main-page/Subscribe.jpg");
+    background-image: url("../images/main-page/Subscribe.jpg");
+    /* ../images/main-page/Subscribe.jpg */
     color: #FFFFFF;
     background-size: 100% auto;
     height: 414.86px;
@@ -280,7 +281,7 @@ body {
     color: #FFFFFF;
     background-color: #82B3D3;
     background-image: url("../images/catalog/catalog-background-1.jpg");
-
+/* ../images/catalog/catalog-background-1.jpg */
     background-size: 100% auto;
     background-repeat: no-repeat;
 }

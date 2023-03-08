@@ -67,7 +67,6 @@ body {
 }
 
 .advantages-title {
-    font-family: 'PT Sans'; sans-serif;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -75,7 +74,6 @@ body {
 }
 
 .advantages-text {
-    font-family: 'PT Sans'; sans-serif;
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
@@ -84,7 +82,6 @@ body {
 
 
 .advantages-item-title {
-    font-family: 'PT Sans'; sans-serif;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -93,7 +90,6 @@ body {
 }
 
 .advantages-item-text{
-    font-family: 'PT Sans'; sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -190,13 +186,7 @@ body {
     text-decoration: none;
 }
 
-.button > a {
-    font-size: 20px;
-    line-height: 36px;
-}
-
 .page-footer {
-    font-family: 'PT Sans'; sans-serif;
     text-align: center;
     text-decoration: none;
 }
@@ -207,8 +197,7 @@ body {
 
 .newsletter {
     text-align: center;
-    background-image: url("../images/main-page/Subscribe.jpg");
-    /* ../images/main-page/Subscribe.jpg */
+    background-image: url("/images/main-page/Subscribe.jpg");
     color: #FFFFFF;
     background-size: 100% auto;
     height: 414.86px;
@@ -238,7 +227,7 @@ body {
 .field {
     width: 452px;
     height: 52px;
-    background: #F2F2F2;
+    background-color: #F2F2F2;
 }
 
 .button-newsletter-button {
@@ -256,7 +245,6 @@ body {
 }
 
 .contact-phone {
-    font-family: 'PT Sans'; sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
@@ -283,7 +271,6 @@ body {
     color: #FFFFFF;
     background-color: #82B3D3;
     background-image: url("../images/catalog/catalog-background-1.jpg");
-/* ../images/catalog/catalog-background-1.jpg */
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
@@ -400,4 +387,27 @@ background-color: #FFFFFF;
 
 .pagination-current {
     color: #000000;
+}
+
+.visually-hidden-4stars
+.visually-hidden-3stars,
+.visually-hidden-2stars, {
+    font-weight: 400;
+}
+
+
+
+.reiting {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.reiting-estimation {
+    text-transform: uppercase;
+    color:  #333333;
+    background: #F2F2F2;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
 }

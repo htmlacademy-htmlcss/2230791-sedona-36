@@ -66,6 +66,15 @@ body {
     text-align: center;
 }
 
+.advantages-list,
+.navigation-list,
+.navigation-user,
+.conveniences-list,
+.footer-social-list,
+.catalog-list {
+    list-style: none;
+}
+
 .advantages-title {
     font-weight: 700;
     font-size: 30px;
@@ -401,6 +410,7 @@ background-color: #FFFFFF;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+
 }
 
 .reiting-estimation {

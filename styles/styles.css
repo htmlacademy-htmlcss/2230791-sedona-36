@@ -14,9 +14,15 @@
   font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
     display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 24px;
@@ -40,6 +46,33 @@ body {
 .page-header {
     color: #000000;
     background-color: #FFFFFF;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.navigation {
+display: flex;
+width: 1200px;
+margin: 0 auto;
+}
+
+.navigation-logo {
+    width: 138px;
+    margin-right: 30px;
+    margin-left: 70px;
+}
+.navigation-list {
+    list-style: none;
+    width: 450px;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-user {
+    list-style: none;
+    margin-left: auto;
+    max-width: 300px;
+    margin-right: 70px;
 }
 
 .navigation-link {
@@ -64,11 +97,19 @@ body {
     text-align: center;
 }
 
+.main-container {
+    flex-grow: 1;
+}
+
 .main-index {
     color: #000000;
     background-color: #FFFFFF;
-
 }
+
+.page-container {
+width: 1200px;
+margin: 0 auto;
+    }
 
 .hero {
     background-image: url("../images/main-page/index-background.jpg");
@@ -77,14 +118,41 @@ body {
     background-repeat: no-repeat;
 }
 
+.hero-img {
+display: block;
+margin: 0 auto;
+}
+
 .advantages {
     text-align: center;
 }
 
-.advantages-list,
-.navigation-list,
-.navigation-user,
-.conveniences-list,
+/* .index-columns {
+   display: flex;
+   justify-content: space-between;
+} */
+
+.advantages-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.advantages-item-text-wrapper {
+    /* display: flex; */
+    /* flex-direction: column; */
+    width: 800px;
+    height: 385px;
+}
+
+.advantages-item-img {
+width: 800px;
+height: 385px;
+}
+
 .footer-social-list,
 .catalog-list,
 .pagination-item {
@@ -96,6 +164,8 @@ body {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    margin: 0 auto;
+    width: 651px;
 }
 
 .advantages-text {
@@ -111,7 +181,6 @@ body {
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
-
 }
 
 .advantages-item-text{
@@ -142,7 +211,6 @@ body {
     background-repeat: no-repeat;
     width: 400px;
     height: 385px;
-
 }
 
 .advantages-item-dark-grey {
@@ -151,9 +219,22 @@ body {
     background-repeat: no-repeat;
     width: 400px;
     height: 385px;
-    }
+}
 
 .conveniences {
+    text-align: center;
+}
+
+.conveniences-item {
+    width: 400px;
+}
+
+.conveniences-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
     text-align: center;
 }
 
@@ -175,16 +256,22 @@ body {
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
+    width: 230px;
+    margin: 0 auto;
 }
 
 .conveniences-item-text {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+    width: 230px;
+    margin: 0 auto;
 }
 
 .hotel-search {
     text-align: center;
+    width: 592px;
+    margin: 0 auto;
 }
 .hotel-search-title {
     font-weight: 700;
@@ -211,6 +298,11 @@ body {
     text-decoration: none;
 }
 
+.page-footer-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
 .page-footer {
     text-align: center;
     text-decoration: none;
@@ -227,6 +319,11 @@ body {
     background-size: 100% auto;
     height: 414.86px;
     background-repeat: no-repeat;
+}
+
+.newsletter-wraper {
+    width: 475px;
+    margin: 0 auto;
 }
 
 .newsletter-title {
@@ -263,6 +360,13 @@ body {
     background-color: #83B3D3;
 }
 
+.footer-contacts-wraper {
+display: flex;
+justify-content: space-between;
+}
+.footer-social-item {
+    width: 142;
+}
 .footer-social-item {
     color: #83B3D3;
     background-color: #FFFFFF;
@@ -278,6 +382,7 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: #000000;
+    width: 720px;
 }
 
 .page-footer .contact-site {
@@ -291,6 +396,23 @@ body {
 
 /* Catalog */
 
+.inner-header {
+    margin-left: 70px;
+    width: 114px;
+}
+
+.catalog-hostels {
+display: flex;
+}
+
+.catalog-filter-list {
+    /* display: flex; */
+}
+
+.catalog-filter {
+margin-left: 70px;
+width: 370.85px;
+}
 
 .catalog-fills {
     color: #FFFFFF;
@@ -300,6 +422,9 @@ body {
     background-repeat: no-repeat;
 }
 
+.catalog-right-column {
+width: 1200px;
+}
 .inner-header-title {
     font-weight: 700;
     font-size: 60px;

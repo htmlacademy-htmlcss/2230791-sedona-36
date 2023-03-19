@@ -136,7 +136,7 @@ margin: 0 auto;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 
 }
@@ -187,14 +187,17 @@ height: 385px;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+    width: 400px;
+    height: 385px;
+
 }
 
-.advantages-item-text-wrapper {
-    width: 400px;
+/* .advantages-item-text-wrapper {
+    /* width: 400px; */
+
+
 }
-.advantages-item-blue-town {
-    order: 1;
-}
+
 .advantages-item-blue-devil {
     order: 5;
 }
@@ -204,12 +207,12 @@ height: 385px;
     background-color: #82B3D3;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 103px 85px;
-    gap: 10px;
-    width: 400px;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* padding: 103px 85px; */
+    /* gap: 10px; */
+    /* width: 400px; */
     height: 385px;
 }
 .advantages-item-light-grey-square {

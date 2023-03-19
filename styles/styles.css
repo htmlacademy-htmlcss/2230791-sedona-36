@@ -142,8 +142,6 @@ margin: 0 auto;
 }
 
 .advantages-item-text-wrapper {
-    /* display: flex; */
-    /* flex-direction: row; */
     width: 400px;
     height: 385px;
 }
@@ -192,18 +190,13 @@ height: 385px;
 
 }
 
-/* .advantages-item-text-wrapper {
-    /* width: 400px; */
 
 .advantages-item-blue-town {
     display: flex;
     /* flex-direction: column-reverse; */
 }
 
-.advantages-item-blue-devil {
-    display: flex;
-    flex-direction: row-reverse;
-}
+
 
 
 .advantages-item-blue-town,
@@ -221,12 +214,7 @@ height: 385px;
     /* width: 400px; */
     height: 385px;
 }
-.advantages-item-light-grey-square {
-    order: 2;
-}
-.advantages-item-light-grey-tourist {
-    order: 4;
-}
+
 .advantages-item-light-grey-square,
 .advantages-item-light-grey-tourist {
     color: #000000;
@@ -236,7 +224,6 @@ height: 385px;
     height: 385px;
 }
 .advantages-item-dark-grey {
-    order: 3;
     color: #000000;
     background-color: #83B3D333;
     background-repeat: no-repeat;

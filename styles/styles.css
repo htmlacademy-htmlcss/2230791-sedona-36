@@ -189,6 +189,15 @@ height: 385px;
     line-height: 21px;
 }
 
+.advantages-item-text-wrapper {
+    width: 400px;
+}
+.advantages-item-blue-town {
+    order: 1;
+}
+.advantages-item-blue-devil {
+    order: 5;
+}
 .advantages-item-blue-town,
 .advantages-item-blue-devil {
     color: #FFFFFF;
@@ -199,11 +208,16 @@ height: 385px;
     justify-content: center;
     align-items: center;
     padding: 103px 85px;
-    /* gap: 10px; */
+    gap: 10px;
     width: 400px;
     height: 385px;
 }
-
+.advantages-item-light-grey-square {
+    order: 2;
+}
+.advantages-item-light-grey-tourist {
+    order: 4;
+}
 .advantages-item-light-grey-square,
 .advantages-item-light-grey-tourist {
     color: #000000;
@@ -212,8 +226,8 @@ height: 385px;
     width: 400px;
     height: 385px;
 }
-
 .advantages-item-dark-grey {
+    order: 3;
     color: #000000;
     background-color: #83B3D333;
     background-repeat: no-repeat;
@@ -365,30 +379,16 @@ display: flex;
 justify-content: space-between;
 }
 
-.footer-social {
-    width: 142;
-}
-
-.button-vk {
-    width: 39px;
-}
-
-.button-tg {
-    width: 39px;
-}
-
-.button-ut {
-    width: 39px;
-}
-
 .footer-social-list {
     list-style: none;
+    width: 142px;
+
 }
+
 .footer-social-item {
     color: #83B3D3;
     background-color: #FFFFFF;
     text-align: center;
-    width: 39px;
 }
 
 .contact-phone {

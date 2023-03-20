@@ -8,10 +8,11 @@
   <body>
 
   <header class="page-header" data-test="header">
-    <a class="navigation-logo" href="index.html">
-      <img class="page-header-logo" src="/images/catalog/logo-header.svg" width="138" height="64" alt="Логотип: city of Sedona">
-    </a>
+
     <nav class="navigation">
+      <a class="navigation-logo" href="index.html">
+        <img class="page-header-logo" src="/images/catalog/logo-header.svg" width="138" height="64" alt="Логотип: city of Sedona">
+      </a>
       <ul class="navigation-list">
         <li class="navigation-item">
          <a class="navigation-link navigation-link-current" href="main.html">Главная</a>
@@ -36,50 +37,71 @@
           </a>
         </li>
       </ul>
+     <a class="navigation-link" href="#">Хочу сюда</a>
     </nav>
-    <a class="navigation-link" href="#">Хочу сюда</a>
-    </header>
+  </header>
 
-  <main class="main-index" data-test="main">
-    <section class="hero" data-test="hero">
-    <h1 class="visually-hidden">Седона-городок в Аризоне</h1>
-     <img class="hero-img" src="/images/main-page/welcome.svg" width="458" height="352" alt="Welcome">
-    </section>
+  <main class="main-container main-index" data-test="main">
+    <div class="page-container">
+       <section class="hero" data-test="hero">
+          <h1 class="visually-hidden">Седона-городок в Аризоне</h1>
+            <img class="hero-img" src="/images/main-page/welcome.svg" width="458" height="352" alt="Welcome">
+       </section>
 
-    <section class="advantages" data-test="advantages">
-    <header class="advantages-title">
-      <h2 class="advantages-title" >Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-    <p class="advantages-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-    </header>
-      <ul class="advantages-list">
-        <li class="advantages-item-blue-town">
+       <section class="advantages" data-test="advantages">
+          <header class="advantages-title">
+           <h2 class="advantages-title" >Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+           <p class="advantages-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <ul class="advantages-list">
+
+         <li class="advantages-item-blue-town">
           <div class="advantages-item-text-wrapper">
-          <img  class="advantages-item-img" src="/images/main-page/photo-1.jpg" width="800" height="384" alt="Фото улицы">
-          <h3 class="advantages-item-title">Настоящий городок</h3>
-           <p class="advantages-item-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <h3 class="advantages-item-title">Настоящий городок</h3>
+              <p class="advantages-item-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
+          <img  class="advantages-item-img" src="/images/main-page/photo-1.jpg" width="800" height="384" alt="Фото улицы">
           </li>
-        <li class="advantages-item-light-grey-square">
-          <h3 class="advantages-item-title">Небольшая площадь</h3>
-          <p class="advantages-item-text">Все достопримечательности находятся очень близко</p>
-        </li>
-        <li class="advantages-item-dark-grey">
-          <h3 class="advantages-item-title">Красивая дорога</h3>
-          <p class="advantages-item-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </li>
-        <li class="advantages-item-light-grey-tourist">
-         <h3 class="advantages-item-title">Мало туристов</h3>
-         <p class="advantages-item-text">Большинство едет в Гранд Каньон и толпится там</p>
-        </li>
-        <li class="advantages-item-blue-devil">
-          <div class="advantages-item-text-wrapper">
+
+          <li class="advantages-item-light-grey-square">
+             <h3 class="advantages-item-title">Небольшая площадь</h3>
+             <p class="advantages-item-text">Все достопримечательности находятся очень близко</p>
+         </li>
+
+         <li class="advantages-item-dark-grey">
+             <h3 class="advantages-item-title">Красивая дорога</h3>
+             <p class="advantages-item-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+         </li>
+
+         <li class="advantages-item-light-grey-tourist">
+            <h3 class="advantages-item-title">Мало туристов</h3>
+            <p class="advantages-item-text">Большинство едет в Гранд Каньон и толпится там</p>
+         </li>
+
+          <li class="advantages-item-blue-devil">
             <img class="advantages-item-img" src="images/main-page/photo-2.jpg" width="800" height="385" alt="">
-          <h3 class="advantages-item-title">Там есть мост дьявола</h3>
-          <p class="advantages-item-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-        </div>
-      </li>
-      </ul>
-    </section>
+            <div class="advantages-item-text-wrapper">
+              <h3 class="advantages-item-title">Там есть мост дьявола</h3>
+              <p class="advantages-item-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </div>
+
+          </li>
+       </ul>
+
+   </section>
 
     <section class="conveniences">
       <header class="conveniences">
@@ -107,12 +129,17 @@
       <p class="hotel-search-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <a class="button-search" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
     </section>
+    </div>
   </main>
 
   <footer class="page-footer" data-test="subscribe">
-    <section class="newsletter">
+
+    <div class="page-footer-container">
+      <section class="newsletter">
+      <div class="newsletter-wraper">
       <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
        <p class="newsletter-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      </div>
        <p class="newsletter-form-email">
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
          <label for="newsletter-email"></label>
@@ -120,7 +147,9 @@
          <button class="button-newsletter-button" type="submit">Подписаться</button>
         </form>
        </p>
+
     </section>
+  <div class="footer-contacts-wraper">
 
     <section class="footer-social" data-test="footer">
       <h2 class="visually-hidden">Наши соцсети</h2>
@@ -156,6 +185,8 @@
           <img class="contact-site" src="images/icons/HTML-Academy.svg" width="115" height="33" alt="Логотип: HTML-Academy">
         </a>
     </section>
+  </div>
+</div>
   </footer>
  </body>
 </html>

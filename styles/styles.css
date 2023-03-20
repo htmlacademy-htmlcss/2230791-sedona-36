@@ -14,7 +14,15 @@
   font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 24px;
@@ -22,9 +30,48 @@ body {
     background-color: #FFFFFF;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 .page-header {
     color: #000000;
     background-color: #FFFFFF;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.navigation {
+display: flex;
+width: 1200px;
+}
+
+.navigation-logo {
+    width: 138px;
+    margin-right: 30px;
+    margin-left: 70px;
+}
+.navigation-list {
+    list-style: none;
+    width: 450px;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-user {
+    list-style: none;
+    margin-left: auto;
+    max-width: 300px;
+    margin-right: 70px;
 }
 
 .navigation-link {
@@ -49,11 +96,19 @@ body {
     text-align: center;
 }
 
+.main-container {
+    flex-grow: 1;
+}
+
 .main-index {
     color: #000000;
     background-color: #FFFFFF;
-
 }
+
+.page-container {
+width: 1200px;
+margin: 0 auto;
+    }
 
 .hero {
     background-image: url("../images/main-page/index-background.jpg");
@@ -62,8 +117,44 @@ body {
     background-repeat: no-repeat;
 }
 
+.hero-img {
+display: block;
+margin: 0 auto;
+}
+
 .advantages {
     text-align: center;
+}
+
+.index-columns {
+   display: flex;
+   justify-content: space-between;
+}
+
+.advantages-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.advantages-item-text-wrapper {
+    width: 400px;
+    height: 385px;
+}
+
+.advantages-item-img {
+width: 800px;
+height: 385px;
+}
+
+
+.catalog-list,
+.pagination-item {
+    list-style: none;
 }
 
 .advantages-title {
@@ -71,6 +162,8 @@ body {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    margin: 0 auto;
+    width: 651px;
 }
 
 .advantages-text {
@@ -86,14 +179,25 @@ body {
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
-
 }
 
 .advantages-item-text{
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+    width: 400px;
+    height: 385px;
+
 }
+
+
+.advantages-item-blue-town {
+    display: flex;
+    /* flex-direction: column-reverse; */
+}
+
+
+
 
 .advantages-item-blue-town,
 .advantages-item-blue-devil {
@@ -101,12 +205,13 @@ body {
     background-color: #82B3D3;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 103px 85px;
-    gap: 10px;
-    width: 400px;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* padding: 103px 85px; */
+    /* gap: 10px; */
+    /* width: 400px; */
     height: 385px;
 }
 
@@ -117,18 +222,29 @@ body {
     background-repeat: no-repeat;
     width: 400px;
     height: 385px;
-
 }
-
 .advantages-item-dark-grey {
     color: #000000;
     background-color: #83B3D333;
     background-repeat: no-repeat;
     width: 400px;
     height: 385px;
-    }
+}
 
 .conveniences {
+    text-align: center;
+}
+
+.conveniences-item {
+    width: 400px;
+}
+
+.conveniences-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
     text-align: center;
 }
 
@@ -150,16 +266,22 @@ body {
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
+    width: 230px;
+    margin: 0 auto;
 }
 
 .conveniences-item-text {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+    width: 230px;
+    margin: 0 auto;
 }
 
 .hotel-search {
     text-align: center;
+    width: 592px;
+    margin: 0 auto;
 }
 .hotel-search-title {
     font-weight: 700;
@@ -186,6 +308,11 @@ body {
     text-decoration: none;
 }
 
+.page-footer-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
 .page-footer {
     text-align: center;
     text-decoration: none;
@@ -202,6 +329,11 @@ body {
     background-size: 100% auto;
     height: 414.86px;
     background-repeat: no-repeat;
+}
+
+.newsletter-wraper {
+    width: 475px;
+    margin: 0 auto;
 }
 
 .newsletter-title {
@@ -238,6 +370,17 @@ body {
     background-color: #83B3D3;
 }
 
+.footer-contacts-wraper {
+display: flex;
+justify-content: space-between;
+}
+
+.footer-social-list {
+    list-style: none;
+    width: 142px;
+
+}
+
 .footer-social-item {
     color: #83B3D3;
     background-color: #FFFFFF;
@@ -253,6 +396,7 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: #000000;
+    width: 720px;
 }
 
 .page-footer .contact-site {
@@ -266,6 +410,32 @@ body {
 
 /* Catalog */
 
+.main-inner {
+    flex-grow: 1;
+}
+
+.inner-header {
+    margin-left: 70px;
+    width: 114px;
+}
+
+.catalog-hostels {
+display: flex;
+}
+
+.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.catalog-item {
+width: 340px;
+}
+
+.catalog-filter {
+margin-left: 70px;
+width: 370.85px;
+}
 
 .catalog-fills {
     color: #FFFFFF;
@@ -275,12 +445,17 @@ body {
     background-repeat: no-repeat;
 }
 
+.catalog-right-column {
+width: 1200px;
+}
 .inner-header-title {
     font-weight: 700;
     font-size: 60px;
     line-height: 78px;
     text-transform: none;
 }
+
+
 
 .breadcrumbs {
     color: #FFFFFF;
@@ -382,7 +557,20 @@ background-color: #FFFFFF;
 }
 
 .pagination {
-    color: #82B3D3;
+    color: #FFFFFF;
+    display: flex;
+    background-color: #82B3D3;
+    width: 400px;
+    font-family: PT Sans;
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+align-items: center;
+}
+
+.pagination-item {
+    width: 60px;
+    height: 60px;
 }
 
 .pagination-current {
@@ -401,6 +589,7 @@ background-color: #FFFFFF;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+
 }
 
 .reiting-estimation {
@@ -411,3 +600,8 @@ background-color: #FFFFFF;
     font-size: 16px;
     line-height: 20px;
 }
+/* vertical-align: middle - убрать пустое пространство
+.card img {
+  vertical-align: middle;
+}
+... */
